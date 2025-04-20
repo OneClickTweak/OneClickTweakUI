@@ -1,5 +1,5 @@
-import { Setting, SettingScope, SettingValue } from "./setting";
-import { UserInstance } from "./user";
+import { Setting, SettingScope, SettingValue } from "../api/setting";
+import { UserInstance } from "../api/user";
 
 export class SettingsInstance {
   scope!: SettingScope;
