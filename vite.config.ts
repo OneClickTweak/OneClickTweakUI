@@ -29,5 +29,11 @@ export default defineConfig({
 				}
 			}
 		]
-	}
+	},
+	server: {
+    proxy: {
+      // Proxy API calls to the .NET backend
+      '/api': 'http://localhost:5000',
+    },
+  },
 });
